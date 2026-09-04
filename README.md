@@ -1,9 +1,10 @@
-
 # Hi, I'm Devine Nyaenya Ngorwe 👋
+
+📍 Nairobi, Kenya · 📬 devinenyaenya@gmail.com · 🔗 [LinkedIn](https://www.linkedin.com/in/devine-n-b16776173)
 
 I build **secure software** — specifically for the messy, high-stakes problem of **who is allowed to do a dangerous thing, and how do we prove it afterwards.**
 
-> **One line:** I'm an application-security engineer in training who thinks like both an attacker and a defender, and ships the *proof* — tests, audit logs, and detection rules — alongside the code.
+> **One line:** I'm a security-focused engineer who thinks like both an attacker and a defender, and ships the *proof* — tests, audit logs, and detection rules — alongside the code.
 
 ## What I'm working on
 
@@ -13,19 +14,19 @@ I build **secure software** — specifically for the messy, high-stakes problem 
 | **[📱 android-device-management-tool](https://github.com/Nyaenya-Devine/android-device-management-tool)** | The Android Enterprise (MDM) admin console that pairs with the lab — the human-facing side of device management. | TypeScript / Next.js | Full-stack: a security core with a real UI on top. |
 | **[🌍 endopima-kenya](https://github.com/Nyaenya-Devine/endopima-kenya)** | Bilingual, community-first **endometriosis early-recognition & care-navigation** prototype for Kenya. | HTML | A different register — the *human* side of tech. Health-tech that meets people where they are. |
 
-## Why I care about security in healthcare
+## Why security + operations + health
 
-Enterprise device reset is a sharpened example of a universal problem: **one compromised account shouldn't be a complete weapon.** I build controls (separation of duties, tamper-evident logging, brute-force lockout) that make a single person unable to do irreversible damage, and I prove it by attacking my own work.
+A decade of running businesses, keeping books, and supporting customers taught me what a lot of security work is really about: **accuracy, compliance, and trust.** Enterprise device reset is a sharpened example of a universal problem — one compromised account shouldn't be a complete weapon. So I build controls (separation of duties, tamper-evident logging, brute-force lockout) that stop a single person from doing irreversible damage, and I prove them by attacking my own work.
 
-My interest in the health domain (see `endopima-kenya`) pushes this toward the place it matters most: **securing systems that touch people's health and data.**
+I care about health-tech, too (see `endopima-kenya`), because I want to secure the systems that touch people's health and data.
 
 ## The discipline I bring
 
-- **Attacker + defender mindset** — I red-team my own systems: brute force, replay, privilege escalation, after-hours abuse, unknown-device spoofing. I then fix what I find and lock it in with regression tests.
+- **Attacker + defender mindset** — I red-team my own systems: brute force, replay, privilege escalation, after-hours abuse, unknown-device spoofing. Then I fix what I find and lock it in with regression tests.
 - **Security as code, not slides** — PBKDF2+salt authn, `hmac.compare_digest` (timing-safe), role whitelist, session TTL, IP rate limiting, `html.escape` (XSS), AST-level safety checks that *ban* dangerous calls.
-- **Shipping the receipts** — CI tests, a live demo, metrics (`6/6 detection`, `14→9 false positives`, `0 open critical bugs`), and mapping security controls to **MITRE ATT&CK** and **NIST 800-53**.
+- **Shipping the receipts** — CI tests, a live demo, metrics (`6/6 detection`, `14→9 false positives`, `0 open critical bugs`), and mapping to **MITRE ATT&CK** and **NIST 800-53**.
 
-## How to use this repo (30 seconds)
+## How to use the lab (30 seconds)
 
 ```bash
 git clone https://github.com/Nyaenya-Devine/android-reset-lab.git
@@ -42,10 +43,9 @@ Watch the **[demo video](https://github.com/Nyaenya-Devine/android-reset-lab/rel
 
 ## Let's connect
 
-I'm actively looking for a role in **application security, security engineering, or backend/full-stack** where I can keep building secure systems and turning them into shipped, tested, defensible products.
+I'm actively looking for a role in **security operations, application security, IT support, or incident response** — ready to bring a decade of operations and client-service discipline to a security-focused team.
 
-- 🔗 **[LinkedIn](https://www.linkedin.com/in/devine-n-b16776173)** — *Devine Nyaenya Ngorwe*
-- ☕ **[GitHub](https://github.com/Nyaenya-Devine)** — *Nyaenya-Devine*
-- 📄 **[Resume](https://devine-nyaenya-resume.surge.sh)** — 
-- 📬 **[Email](devinenyaenya@gmail.com)** —
-  
+- 🔗 **[LinkedIn](https://www.linkedin.com/in/devine-n-b16776173)** — Devine Nyaenya Ngorwe
+- ☕ **[GitHub](https://github.com/Nyaenya-Devine)** — github.com/Nyaenya-Devine
+- 📄 **[Resume](https://devine-nyaenya-resume.surge.sh)** — host the `resume-site` folder to activate this link
+- 📬 **[Email](mailto:devinenyaenya@gmail.com)** — devinenyaenya@gmail.com
