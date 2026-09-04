@@ -1,16 +1,51 @@
-## Hi there 👋
 
-<!--
-**Nyaenya-Devine/Nyaenya-devine** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Hi, I'm Devine Nyaenya Ngorwe 👋
 
-Here are some ideas to get you started:
+I build **secure software** — specifically for the messy, high-stakes problem of **who is allowed to do a dangerous thing, and how do we prove it afterwards.**
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+> **One line:** I'm an application-security engineer in training who thinks like both an attacker and a defender, and ships the *proof* — tests, audit logs, and detection rules — alongside the code.
+
+## What I'm working on
+
+| Project | What it is | Stack | Why it matters |
+|---|---|---|---|
+| **[🛡️ android-reset-lab](https://github.com/Nyaenya-Devine/android-reset-lab)** | A simulated enterprise MDM device-reset system that **prevents single-person abuse** — dual-control approval, RBAC default-deny, tamper-evident hash-chained audit log, and detection of 6 simulated attacks. | Python (stdlib only) + pytest | Ships security *controls* + *the tests that prove they hold*. **6/6 attacks detected, 28 tests passing.** Mapped to MITRE ATT&CK & NIST 800-53. |
+| **[📱 android-device-management-tool](https://github.com/Nyaenya-Devine/android-device-management-tool)** | The Android Enterprise (MDM) admin console that pairs with the lab — the human-facing side of device management. | TypeScript / Next.js | Full-stack: a security core with a real UI on top. |
+| **[🌍 endopima-kenya](https://github.com/Nyaenya-Devine/endopima-kenya)** | Bilingual, community-first **endometriosis early-recognition & care-navigation** prototype for Kenya. | HTML | A different register — the *human* side of tech. Health-tech that meets people where they are. |
+
+## Why I care about security in healthcare
+
+Enterprise device reset is a sharpened example of a universal problem: **one compromised account shouldn't be a complete weapon.** I build controls (separation of duties, tamper-evident logging, brute-force lockout) that make a single person unable to do irreversible damage, and I prove it by attacking my own work.
+
+My interest in the health domain (see `endopima-kenya`) pushes this toward the place it matters most: **securing systems that touch people's health and data.**
+
+## The discipline I bring
+
+- **Attacker + defender mindset** — I red-team my own systems: brute force, replay, privilege escalation, after-hours abuse, unknown-device spoofing. I then fix what I find and lock it in with regression tests.
+- **Security as code, not slides** — PBKDF2+salt authn, `hmac.compare_digest` (timing-safe), role whitelist, session TTL, IP rate limiting, `html.escape` (XSS), AST-level safety checks that *ban* dangerous calls.
+- **Shipping the receipts** — CI tests, a live demo, metrics (`6/6 detection`, `14→9 false positives`, `0 open critical bugs`), and mapping security controls to **MITRE ATT&CK** and **NIST 800-53**.
+
+## How to use this repo (30 seconds)
+
+```bash
+git clone https://github.com/Nyaenya-Devine/android-reset-lab.git
+cd android-reset-lab
+pip install -r requirements.txt
+python seed_lab.py           # creates simulated users
+python attacker_sim.py       # fires 6 attacks into a hash-chained log
+python threat_detection.py   # 6/6 attacks detected
+python reports.py            # dashboard
+pytest -q                    # 28 passed
+```
+
+Watch the **[demo video](https://github.com/Nyaenya-Devine/android-reset-lab/releases/download/v2.0/android-reset-lab-demo.mp4)** for the 60-second walkthrough.
+
+## Let's connect
+
+I'm actively looking for a role in **application security, security engineering, or backend/full-stack** where I can keep building secure systems and turning them into shipped, tested, defensible products.
+
+- 🔗 **[LinkedIn](https://www.linkedin.com/in/devine-n-b16776173)** — *Devine Nyaenya Ngorwe*
+- ☕ **[GitHub](https://github.com/Nyaenya-Devine)** — *Nyaenya-Devine*
+- 📄 **[Resume](https://devine-nyaenya-resume.surge.sh)** — 
+- 📬 **[Email](devinenyaenya@gmail.com)** —
+  
