@@ -19,9 +19,9 @@
 
 | Project | What it is | Stack | Metrics |
 | --- | --- | --- | --- |
-| **[🛡️ android-reset-lab](https://github.com/Nyaenya-Devine/android-reset-lab)** | Enterprise MDM reset that **prevents single-person abuse** — dual-control, RBAC default-deny, hash-chained + HMAC audit, SQLite+JSON, Argon2id, TOTP MFA, CSRF | Python stdlib + optional argon2-cffi + pytest | **52 tests (json+sqlite), 6/6 detection, 9 precise alerts + ledger/self-approval/P3 demos** |
-| **[🔐 chokepoint](https://github.com/Nyaenya-Devine/Nyaenya-Devine-chokepoint)** | Least-privilege access-control & tamper-evident audit for humans and AI agents (OWASP Agentic AI ASI03) | TypeScript | Frontier OWASP 2026 |
-| **[📱 device-management-tool](https://github.com/Nyaenya-Devine/android-device-management-tool)** | Android Enterprise admin console — UI for the security lab | TypeScript / Next.js | Full-stack |
+| **[🛡️ android-reset-lab](https://github.com/Nyaenya-Devine/android-reset-lab)** · [▶ live console](https://android-reset-lab.vercel.app) | Enterprise MDM reset that **prevents single-person abuse** — dual-control, RBAC default-deny, hash-chained + HMAC audit, SQLite+JSON, Argon2id, TOTP MFA, CSRF | Python stdlib + optional argon2-cffi + pytest | **52 tests (json+sqlite), 6/6 detection, 9 precise alerts + ledger/self-approval/P3 demos** |
+| **[🔐 chokepoint](https://github.com/Nyaenya-Devine/chokepoint)** · [▶ live demo](https://chokepoint-demo.vercel.app) | Least-privilege access-control & tamper-evident audit for humans and AI agents (OWASP Agentic AI ASI03) | TypeScript | Frontier OWASP 2026 |
+| **[📱 device-management-tool](https://github.com/Nyaenya-Devine/android-device-management-tool)** · [▶ live](https://android-device-management-tool.vercel.app) | Android Enterprise admin console — UI for the security lab | TypeScript / Next.js | Full-stack |
 | **[🌍 endopima-kenya](https://github.com/Nyaenya-Devine/endopima-kenya)** | Bilingual endometriosis early-recognition & care-navigation for Kenya | HTML | Health-tech |
 
 ### The discipline I bring
@@ -31,7 +31,12 @@
 - **Shipping receipts:** CI (pytest + CodeQL + pip-audit + TruffleHog), live demos (ledger, self-approval, P3 hardening), metrics (6/6, 14→9 false positives, 0 critical bugs), MITRE ATT&CK + NIST 800-53 mapping
 - **Honest limitations:** Document tamper-evident vs tamper-proof (file-based HMAC vs KMS), in-memory rate limiting vs Redis, plaintext TOTP secret vs encrypted, Argon2 fallback vs required — shows production thinking
 
-### How to use the lab (30 sec)
+### Try the hosted consoles (zero setup)
+
+- **Android Reset Lab** (simulation): <https://android-reset-lab.vercel.app> — sign in with `que` / `LabRat!2026` (also `ops` / `OpsOps!123`, `analyst` / `Analyst!2026`). State resets on cold start by design.
+- **Chokepoint** (demo console): <https://chokepoint-demo.vercel.app> — one-click demo account on the login screen.
+
+### How to use the lab (30 sec, local)
 
 ```bash
 git clone https://github.com/Nyaenya-Devine/android-reset-lab.git
