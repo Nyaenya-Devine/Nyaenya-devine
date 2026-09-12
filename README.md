@@ -1,7 +1,7 @@
 ![](https://komarev.com/ghpvc/?username=Nyaenya-Devine&label=Profile%20views&color=0e75b6&style=flat)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/devine-n-b16776173)
 [![Resume](https://img.shields.io/badge/Resume-View-green?style=flat)](https://devine-nyaenya-resume.netlify.app/)
-[![Security Lab](https://img.shields.io/badge/Lab-52%20tests%20%7C%206%2F6%20detection%20%7C%20P3%20hardened-brightgreen)](https://github.com/Nyaenya-Devine/android-reset-lab)
+[![Security Lab](https://img.shields.io/badge/Lab-68%20tests%20%7C%20P4%20Cerberus%20%7C%20Merkle%2BCedar-brightgreen)](https://github.com/Nyaenya-Devine/android-reset-lab)
 
 # Hi, I'm Devine Nyaenya Ngorwe 👋
 
@@ -19,21 +19,21 @@
 
 | Project | What it is | Stack | Metrics |
 | --- | --- | --- | --- |
-| **[🛡️ android-reset-lab](https://github.com/Nyaenya-Devine/android-reset-lab)** · [▶ live console](https://android-reset-lab.vercel.app) | Enterprise MDM reset that **prevents single-person abuse** — dual-control, RBAC default-deny, hash-chained + HMAC audit, SQLite+JSON, Argon2id, TOTP MFA, CSRF | Python stdlib + optional argon2-cffi + pytest | **52 tests (json+sqlite), 6/6 detection, 9 precise alerts + ledger/self-approval/P3 demos** |
-| **[🔐 chokepoint](https://github.com/Nyaenya-Devine/chokepoint)** · [▶ live demo](https://chokepoint-demo.vercel.app) | Least-privilege access-control & tamper-evident audit for humans and AI agents (OWASP Agentic AI ASI03) | TypeScript | Frontier OWASP 2026 |
-| **[📱 device-management-tool](https://github.com/Nyaenya-Devine/android-device-management-tool)** · [▶ live](https://android-device-management-tool.vercel.app) | Android Enterprise admin console — UI for the security lab | TypeScript / Next.js | Full-stack |
-| **[🌍 endopima-kenya](https://github.com/Nyaenya-Devine/endopima-kenya)** | Bilingual endometriosis early-recognition & care-navigation for Kenya | HTML | Health-tech |
+| **[🛡️ android-reset-lab](https://github.com/Nyaenya-Devine/android-reset-lab)** · [▶ live console](https://android-reset-lab.vercel.app) | Enterprise MDM reset that **prevents single-person abuse** — P4 Cerberus: Merkle transparency RFC6962, Cedar ABAC 10 policies AuthZEN, risk-adaptive 8 factors, WebAuthn passkeys AAGUID, Play Integrity StrongBox, WYSIWYS tx signing, DPoP RFC9449 | Python + optional argon2-cffi + pytest | **68 tests (P4), 6/6 detection, 0 vulns, 0 medium Bandit** |
+| **[🔐 chokepoint](https://github.com/Nyaenya-Devine/chokepoint)** · [▶ live demo](https://chokepoint-demo.vercel.app) | Least-privilege access-control & tamper-evident audit for humans and AI agents (OWASP Agentic AI ASI03) — 5 engines, 5 API routes, 4 dashboards | TypeScript Next 16.3.5 | **0 vulns, lean repo** |
+| **[📱 device-management-tool](https://github.com/Nyaenya-Devine/android-device-management-tool)** · [▶ live](https://android-device-management-tool.vercel.app) | Android Enterprise admin console — UI for the security lab | TypeScript / Next.js 16.3.5 | **0 vulns** |
+| **[🌍 endopima-kenya](https://github.com/Nyaenya-Devine/endopima-kenya)** | Bilingual endometriosis early-recognition & care-navigation for Kenya | HTML | **CSP self-only, esc() XSS fix** |
 
 ### The discipline I bring
 
-- **Attacker + defender:** Red-team my own systems (brute force, replay, privilege escalation, after-hours, ledger tampering, self-approval, HMAC, MFA bypass) → fix → regression tests
-- **Security as code:** PBKDF2/Argon2id + salt, `hmac.compare_digest`, role whitelist, session TTL + CSRF, IP rate limiting, `html.escape`, AST safety checks, HMAC-signed audit log, TOTP RFC 6238
-- **Shipping receipts:** CI (pytest + CodeQL + pip-audit + TruffleHog), live demos (ledger, self-approval, P3 hardening), metrics (6/6, 14→9 false positives, 0 critical bugs), MITRE ATT&CK + NIST 800-53 mapping
+- **Attacker + defender:** Red-team my own systems (brute force, replay, privilege escalation, after-hours, ledger tampering, self-approval, HMAC, MFA bypass, clone detection, token binding) → fix → regression tests
+- **Security as code:** PBKDF2/Argon2id + salt, `hmac.compare_digest`, role whitelist, session TTL + CSRF, IP rate limiting, `html.escape`, AST safety checks, HMAC-signed audit log, TOTP RFC 6238, Merkle inclusion/consistency proofs, Cedar ABAC fail-closed, WebAuthn counter clone detection, DPoP RFC9449, WYSIWYS tx signing
+- **Shipping receipts:** CI (pytest + CodeQL + pip-audit + TruffleHog), live demos (ledger, self-approval, P3, P4 Cerberus), metrics (6/6, 68 tests, 0 vulns), MITRE ATT&CK + NIST 800-53 mapping, formal spec
 - **Honest limitations:** Document tamper-evident vs tamper-proof (file-based HMAC vs KMS), in-memory rate limiting vs Redis, plaintext TOTP secret vs encrypted, Argon2 fallback vs required — shows production thinking
 
 ### Try the hosted consoles (zero setup)
 
-- **Android Reset Lab** (simulation): <https://android-reset-lab.vercel.app> — sign in with `que` / `LabRat!2026` (also `ops` / `OpsOps!123`, `analyst` / `Analyst!2026`). State resets on cold start by design.
+- **Android Reset Lab** (simulation): <https://android-reset-lab.vercel.app> — sign in with `que` / `LabRat!2026` (also `ops` / `OpsOps!123`, `analyst` / `Analyst!2026`). State resets on cold start by design. Simulation-only, no real device touch.
 - **Chokepoint** (demo console): <https://chokepoint-demo.vercel.app> — one-click demo account on the login screen.
 
 ### How to use the lab (30 sec, local)
@@ -46,20 +46,22 @@ python seed_lab.py && python attacker_sim.py && python threat_detection.py && py
 python demo_ledger_attack.py    # tamper detected at line 2
 python demo_self_approval.py    # self-approval blocked
 python demo_p3_hardening.py     # Argon2id + HMAC tamper-proof + TOTP MFA + SIEM shipping
+python demo_p4_cerberus.py      # Merkle proofs + Cedar ABAC + risk engine + WebAuthn + attestation + tx signing + DPoP
 ```
 
-🎥 [Demo Video](https://github.com/Nyaenya-Devine/android-reset-lab/releases/download/v2.0/android-reset-lab-demo.mp4) | 📊 [Release v3.0 P3 Hardened](https://github.com/Nyaenya-Devine/android-reset-lab/releases/tag/v3.0) | 📝 [Article: How I Fixed 15 Bugs → 52 Tests](https://github.com/Nyaenya-Devine/android-reset-lab/blob/main/ARTICLE.md)
+🎥 [Demo Video](https://github.com/Nyaenya-Devine/android-reset-lab/releases/download/v2.0/android-reset-lab-demo.mp4) | 📊 [Release v4.0 P4 Cerberus](https://github.com/Nyaenya-Devine/android-reset-lab/releases/tag/v4.0) | 📝 [Article: How I Fixed 15 Bugs → 68 Tests P4](https://github.com/Nyaenya-Devine/android-reset-lab/blob/main/ARTICLE.md)
 
-### P3 Hardening Highlights (Current)
+### P4 Cerberus Highlights (Current)
 
-- **Storage:** JSON + SQLite (WAL, ACID) via `LAB_STORAGE_BACKEND=sqlite`
-- **Hashing:** PBKDF2 100k + Argon2id optional (`LAB_HASH_ALGO=argon2`) with fallback
-- **Audit log:** Hash chain + HMAC-SHA256 tamper-proof (key in `data/hmac.key` 0600) + SIEM shipping stdout/file
-- **MFA:** TOTP RFC 6238 stdlib-only, 6-digit, 30s, window=1, QR URI, `LAB_MFA_REQUIRED` flag
-- **Negative tests:** 19 attack tests + 5 P3 tests (SQLi, XSS, CSRF, rate limit, ledger tamper, self-approval, Argon2, HMAC, TOTP, SIEM)
-- **Scanning:** CodeQL + Dependabot + pip-audit + TruffleHog + safety tests
-- **Threat model:** Mermaid diagram with 15 attacks mapped to controls/detection/demo scripts
-- **Honest docs:** 14 limitations documented, 3 demos proving detection/blocking
+- **Merkle transparency log:** RFC6962/RFC9162 append-only, inclusion proof O(log N), consistency proof, checkpoint STH signed, anchoring to Sigstore Rekor
+- **Policy-as-code:** Cedar ABAC 10 policies (RBAC+ABAC hybrid, device trust, time fences), AuthZEN PDP/PEP API, bundle SHA, safe AST, fail-closed, decision logs
+- **Risk-adaptive auth:** 8 factors (IP reputation, geo velocity, device trust score, time anomaly, failure streak, privilege escalation, new device, MFA age) → step-up MFA
+- **WebAuthn passkeys sim:** RP ID origin binding, AAGUID allowlist via FIDO MDS sim, counter clone detection, backup eligibility, UV flags
+- **Device attestation sim:** Play Integrity MEETS_BASIC/DEVICE/STRONG, hardware-backed StrongBox/TEE vs Software, trust_score, key attestation chain
+- **Transaction signing:** WYSIWYS, HMAC-SHA256, nonce, expiry, replay protection
+- **DPoP:** RFC9449 proof-of-possession, jti replay cache, htm/htu binding, short-lived tokens
+- **Observability:** Prometheus-style metrics, structured logs, trace IDs
+- **Tests:** 68 passed, pip-audit 0 vulns, bandit 0 medium 0 high
 
 ### Let's connect — Open to SOC, AppSec, Detection roles (Nairobi/Remote)
 
