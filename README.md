@@ -1,6 +1,6 @@
 ![](https://komarev.com/ghpvc/?username=Nyaenya-Devine&label=Profile%20views&color=0e75b6&style=flat)
-[![OrbitDesk v5.1](https://img.shields.io/badge/OrbitDesk-v5.1%20Flowing%20Conversation%20Fix%20%7C%20Student%20Mode-black)](https://github.com/Nyaenya-Devine/orbitdesk)
-[![Live](https://img.shields.io/badge/Live-orbitdesk--gamma.vercel.app-violet)](https://orbitdesk-gamma.vercel.app)
+[![OrbitDesk v6.7.2%20LinkedIn%20Dock%20%7C%20Electron%2032%20%7C%20SLSA%20L3-black)](https://github.com/Nyaenya-Devine/orbitdesk)
+[![Live](https://img.shields.io/badge/Live-orbitdesk.vercel.app-violet)](https://orbitdesk-gamma.vercel.app)
 [![Portfolio](https://img.shields.io/badge/Portfolio-8%20Projects%20Live-blue)](https://devine-nyaenya-portfolio.vercel.app)
 [![Security](https://img.shields.io/badge/Security-P4%20Cerberus%2068%20tests%200%20vulns-brightgreen)](https://github.com/Nyaenya-Devine/android-reset-lab)
 
@@ -12,7 +12,7 @@
 
 ---
 
-### 🚀 Featured — OrbitDesk v5.1 (Flowing Conversation Fix + Student Mode)
+### 🚀 Featured — OrbitDesk v6.7.2 (LinkedIn Dock + Modern Toast + Orbit + Electron 32 Auto-Update + SLSA L3 + Signed Commits)
 
 **[◍ OrbitDesk — Modern Workplace Operations Lab](https://github.com/Nyaenya-Devine/orbitdesk)** · **Live:** https://orbitdesk-gamma.vercel.app · **Alt:** https://temporary-rapid-nova-4v5bqt9.vercel.app
 
@@ -55,7 +55,7 @@
 
 ### 🌐 All Live Demos — Permanent URLs
 
-- **OrbitDesk v5.1:** https://orbitdesk-gamma.vercel.app (permanent) + https://temporary-rapid-nova-4v5bqt9.vercel.app (claim: `84225680-eb9d-4fa7-8033-984f52440c30`)
+- **OrbitDesk v6.7.2:** https://orbitdesk-gamma.vercel.app (permanent) + https://temporary-rapid-nova-4v5bqt9.vercel.app (claim: `84225680-eb9d-4fa7-8033-984f52440c30`)
 - **Portfolio:** https://devine-nyaenya-portfolio.vercel.app
 - **Chokepoint:** https://nyaenya-devine-chokepoint.vercel.app
 - **Android Reset Lab:** https://android-reset-lab.vercel.app
@@ -86,6 +86,6 @@
 - 🌐 [Portfolio](https://devine-nyaenya-portfolio.vercel.app) — 8 projects, v5.1 flowing conversation
 - 📄 [Resume](https://devine-nyaenya-resume.netlify.app/)
 - 📬 devinenyaenya@gmail.com
-- 🛡️ [Security Lab 68 tests P4 Cerberus](https://github.com/Nyaenya-Devine/android-reset-lab) · [OrbitDesk v5.1](https://github.com/Nyaenya-Devine/orbitdesk)
+- 🛡️ [Security Lab 68 tests P4 Cerberus](https://github.com/Nyaenya-Devine/android-reset-lab) · [OrbitDesk v6.7.2](https://github.com/Nyaenya-Devine/orbitdesk)
 
 © 2026 Devine Nyaenya • Security-first • Team Lead mindset • Flowing conversation fix • Student Mode • Educational simulators • MIT • Not affiliated with Microsoft • 5 voices • PWA + Electron
