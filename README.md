@@ -1,6 +1,6 @@
 ![](https://komarev.com/ghpvc/?username=Nyaenya-Devine&label=Profile%20views&color=0e75b6&style=flat)
 [![OrbitDesk v6.7.2%20LinkedIn%20Dock%20%7C%20Electron%2032%20%7C%20SLSA%20L3-black)](https://github.com/Nyaenya-Devine/orbitdesk)
-[![Live](https://img.shields.io/badge/Live-orbitdesk.vercel.app-violet)](https://orbitdesk-gamma.vercel.app)
+[![Live](https://img.shields.io/badge/Live-orbitdesk-gamma.vercel.app-violet)](https://orbitdesk-gamma.vercel.app)
 [![Portfolio](https://img.shields.io/badge/Portfolio-8%20Projects%20Live-blue)](https://devine-nyaenya-portfolio.vercel.app)
 [![Security](https://img.shields.io/badge/Security-P4%20Cerberus%2068%20tests%200%20vulns-brightgreen)](https://github.com/Nyaenya-Devine/android-reset-lab)
 
