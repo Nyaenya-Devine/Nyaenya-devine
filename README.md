@@ -1,75 +1,42 @@
-![](https://komarev.com/ghpvc/?username=Nyaenya-Devine&label=Profile%20views&color=0e75b6&style=flat)
+# Devine Nyaenya
 
-# Devine Nyaenya — Security Engineer • Modern Workplace Operations
+Security engineer in Nairobi working across application security, access control and Modern Workplace operations.
 
-> Building security systems that prove they are secure — with tests, audit logs, threat models, and verifiable controls.
+I build small, testable systems that make security decisions visible: who requested an action, which policy allowed it, who approved it, what changed and whether the evidence still verifies.
 
-📍 Nairobi, Kenya · [Portfolio](https://devine-nyaenya-portfolio.vercel.app) · [LinkedIn](https://www.linkedin.com/in/devine-n-b16776173) · devinenyaenya@gmail.com
+## Selected work
 
----
+### [OrbitDesk](https://github.com/Nyaenya-Devine/orbitdesk)
+A local-first Modern Workplace operations lab covering ticket triage, Entra ID, endpoint compliance, directory administration and support communication.
 
-### Featured Projects
+[Open the lab](https://orbitdesk-gamma.vercel.app) · [Product recording](https://orbitdesk-gamma.vercel.app/demo)
 
-#### [OrbitDesk — Modern Workplace Operations Lab](https://github.com/Nyaenya-Devine/orbitdesk)
-**Live:** https://orbitdesk-gamma.vercel.app
+### [Chokepoint](https://github.com/Nyaenya-Devine/chokepoint)
+A least-privilege control plane for sensitive operations, with context-bound authorization, distinct approval and tamper-evident audit evidence.
 
-Training simulator for Modern Workplace support — Entra ID Conditional Access, Intune compliance, Exchange quarantine, Teams troubleshooting. Features ticket queue with SLA tracking, What-If policy simulation, sign-in log investigation, remote desktop with audit logging, voice communication, and team collaboration.
+[Live demonstration](https://chokepoint-demo.vercel.app)
 
-- 16 realistic ticket templates across Entra ID, Intune, Exchange, Teams
-- Three client profiles with distinct policies and compliance requirements
-- Student Mode for progressive learning, Expert Mode for full complexity
-- PWA + Electron desktop, Web Speech API voice, offline support
+### [Android Reset Lab](https://github.com/Nyaenya-Devine/android-reset-lab)
+A simulation for evidence-aware device reset and sanitization decisions. It separates troubleshooting, deprovisioning, evidence preservation, cryptographic purge and physical destruction.
 
-#### [Chokepoint — Dual-Control Security Plane](https://github.com/Nyaenya-Devine/chokepoint)
-**Live:** https://chokepoint-demo.vercel.app
+[Live simulation](https://android-reset-lab.vercel.app)
 
-Least-privilege access control with tamper-evident audit for sensitive operations. Every high-impact action requires a second distinct authorized approver.
+### [Android Device Management Tool](https://github.com/Nyaenya-Devine/android-device-management-tool)
+An experimental Android Enterprise console with explainable fleet posture, policy management and simulated or API-backed workflows.
 
-- HMAC-signed, SHA-256 hash-chained audit log — tamper-evident
-- Dual-control approval with 15-minute expiry and break-glass
-- Role-based access (admin, operator, auditor, viewer)
-- Policy simulation, anomaly detection, SIEM export
-- 26 routes, TypeScript strict, Electron hardened build
+[Live demonstration](https://android-device-management-tool.vercel.app)
 
-#### Security Labs
+### [EndoPima Kenya](https://github.com/Nyaenya-Devine/endopima-kenya)
+A bilingual, mobile-first health-awareness and care-navigation prototype for people experiencing symptoms associated with endometriosis. It is not a diagnostic tool.
 
-| Project | Focus | Live |
-|---------|-------|------|
-| [Android Reset Lab](https://github.com/Nyaenya-Devine/android-reset-lab) | MDM reset controls — RBAC, Merkle transparency, Cedar ABAC, WebAuthn, 68 tests, 6/6 attacks detected | [Demo](https://chokepoint-demo.vercel.app) |
-| [Android Device Management](https://github.com/Nyaenya-Devine/android-device-management-tool) | Android Enterprise — simulator + live Management API, QR enrollment, compliance policies | [Demo](https://android-device-management-tool.vercel.app) |
-| [EndoPima Kenya](https://github.com/Nyaenya-Devine/endopima-kenya) | Health-tech — bilingual EN/SW endometriosis early-recognition, privacy-first | [Demo](https://endopima-kenya.vercel.app) |
+[Open the prototype](https://nyaenya-devine.github.io/endopima-kenya/)
 
----
+## Working principles
 
-### What I Build
+- Least privilege and explicit denial
+- Small, reviewable changes
+- Tests for security properties, not only happy paths
+- Honest product boundaries and limitations
+- Accessible interfaces and restrained client-side code
 
-**Security:** AppSec, access control, tamper-evident audit, threat modeling, attack simulation, Merkle transparency, Cedar ABAC, WebAuthn, Play Integrity
-
-**Modern Workplace:** Microsoft 365, Entra ID Conditional Access, Intune compliance, Exchange Online, Teams, SLA/CSAT/QA, ITIL
-
-**Stack:** Next.js 16 App Router, TypeScript strict, Tailwind CSS, Python, PostgreSQL, Web Crypto, PWA, Electron, Vercel
-
-**Method:** Build → Test → Break → Learn → Secure. Every repository includes tests, audit logs, security policy, and threat model.
-
----
-
-### Live Demos
-
-- **OrbitDesk:** https://orbitdesk-gamma.vercel.app
-- **Chokepoint:** https://chokepoint-demo.vercel.app
-- **Portfolio:** https://devine-nyaenya-portfolio.vercel.app
-- **Android Management:** https://android-device-management-tool.vercel.app
-- **EndoPima Kenya:** https://endopima-kenya.vercel.app
-
----
-
-### GitHub Stats
-
-![Stats](https://github-readme-stats.vercel.app/api?username=Nyaenya-Devine&show_icons=true&theme=dark)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Nyaenya-Devine&layout=compact&theme=dark)
-
----
-
-**Open to:** Modern Workplace Team Lead, Security Engineer, AppSec, Detection Engineering roles — Nairobi / Remote
-
-© 2026 Devine Nyaenya — Security-first engineering
+[Portfolio](https://devine-nyaenya-portfolio.vercel.app) · [LinkedIn](https://www.linkedin.com/in/devine-n-b16776173) · [Email](mailto:devinenyaenya@gmail.com)
