@@ -1,0 +1,14 @@
+.DS_Store
+Thumbs.db
+.env
+.env.local
+dist/
+build/
+.vercel/
+*.log
+.vscode/
+.idea/
+
+# Arena tooling metadata
+.arena-audit.json
+.arena-changes.json
